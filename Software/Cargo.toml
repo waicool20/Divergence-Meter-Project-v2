@@ -1,0 +1,50 @@
+[package]
+name = "divergence_meter_project_v2"
+version = "0.1.0"
+authors = ["waicool20 <waicool20@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+embedded-hal = "0.2.4"
+cortex-m = "0.6.3"
+cortex-m-rt = "0.6.13"
+cortex-m-rtic = "0.5.5"
+panic-halt = "0.2.0"
+usb-device = "0.2.7"
+usbd-serial = "0.1.1"
+
+[dependencies.void]
+default-features = false
+version = "1.0.2"
+
+[dependencies.shared-bus]
+default-features = false
+features = ["cortex-m"]
+version = "0.2.0"
+
+[dependencies.stm32f4xx-hal]
+features = ["stm32f401", "rt"]
+version = "0.8.3"
+
+[dependencies.num]
+version = "0.3"
+default-features = false
+
+[dependencies.num-traits]
+version = "0.2.14"
+default-features = false
+
+[dependencies.num-derive]
+version = "0.3.3"
+default-features = false
+
+[profile.dev.package."*"]
+opt-level = 'z'
+codegen-units = 1
+debug = true
+
+[profile.release]
+opt-level = 'z'
+codegen-units = 1 # better optimizations
+debug = true # symbols are nice and they don't increase the size on Flash
+lto = true # better optimizations

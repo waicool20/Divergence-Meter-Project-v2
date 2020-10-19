@@ -1,0 +1,344 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title "Divergence Meter Project v2 - Main Board"
+Date ""
+Rev "1.0"
+Comp ""
+Comment1 "https://github.com/waicool20/Divergence-Meter-Project-v2/"
+Comment2 "Designed by waicool20"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NMOS_GSD Q4
+U 1 1 5FA61EE1
+P 4800 3600
+F 0 "Q4" V 5049 3600 50  0000 C CNN
+F 1 "Si2300" V 5140 3600 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5000 3700 50  0001 C CNN
+F 3 "~" H 4800 3600 50  0001 C CNN
+	1    4800 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR087
+U 1 1 5FA625F4
+P 5100 3350
+F 0 "#PWR087" H 5100 3200 50  0001 C CNN
+F 1 "+12V" H 5115 3523 50  0000 C CNN
+F 2 "" H 5100 3350 50  0001 C CNN
+F 3 "" H 5100 3350 50  0001 C CNN
+	1    5100 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R36
+U 1 1 5FA62EC8
+P 4450 3500
+F 0 "R36" H 4520 3546 50  0000 L CNN
+F 1 "10k" H 4520 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4380 3500 50  0001 C CNN
+F 3 "~" H 4450 3500 50  0001 C CNN
+	1    4450 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R40
+U 1 1 5FA63430
+P 5100 3500
+F 0 "R40" H 5170 3546 50  0000 L CNN
+F 1 "10k" H 5170 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5030 3500 50  0001 C CNN
+F 3 "~" H 5100 3500 50  0001 C CNN
+	1    5100 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3250 4450 3300
+Wire Wire Line
+	4450 3300 4800 3300
+Wire Wire Line
+	4800 3300 4800 3400
+Connection ~ 4450 3300
+Wire Wire Line
+	4450 3300 4450 3350
+Wire Wire Line
+	4600 3700 4450 3700
+Wire Wire Line
+	4450 3700 4450 3650
+Wire Wire Line
+	5000 3700 5100 3700
+Wire Wire Line
+	5100 3700 5100 3650
+Wire Wire Line
+	5100 3700 5350 3700
+Connection ~ 5100 3700
+Text HLabel 5350 3700 2    50   Output ~ 0
+OUT1
+Text HLabel 4250 3700 0    50   Input ~ 0
+IN1
+Wire Wire Line
+	4450 3700 4250 3700
+Connection ~ 4450 3700
+$Comp
+L Device:Q_NMOS_GSD Q5
+U 1 1 5FA69892
+P 4800 4500
+F 0 "Q5" V 5049 4500 50  0000 C CNN
+F 1 "Si2300" V 5140 4500 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5000 4600 50  0001 C CNN
+F 3 "~" H 4800 4500 50  0001 C CNN
+	1    4800 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR088
+U 1 1 5FA6989E
+P 5100 4250
+F 0 "#PWR088" H 5100 4100 50  0001 C CNN
+F 1 "+12V" H 5115 4423 50  0000 C CNN
+F 2 "" H 5100 4250 50  0001 C CNN
+F 3 "" H 5100 4250 50  0001 C CNN
+	1    5100 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R37
+U 1 1 5FA698A4
+P 4450 4400
+F 0 "R37" H 4520 4446 50  0000 L CNN
+F 1 "10k" H 4520 4355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4380 4400 50  0001 C CNN
+F 3 "~" H 4450 4400 50  0001 C CNN
+	1    4450 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R41
+U 1 1 5FA698AA
+P 5100 4400
+F 0 "R41" H 5170 4446 50  0000 L CNN
+F 1 "10k" H 5170 4355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5030 4400 50  0001 C CNN
+F 3 "~" H 5100 4400 50  0001 C CNN
+	1    5100 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4150 4450 4200
+Wire Wire Line
+	4450 4200 4800 4200
+Wire Wire Line
+	4800 4200 4800 4300
+Connection ~ 4450 4200
+Wire Wire Line
+	4450 4200 4450 4250
+Wire Wire Line
+	4600 4600 4450 4600
+Wire Wire Line
+	4450 4600 4450 4550
+Wire Wire Line
+	5000 4600 5100 4600
+Wire Wire Line
+	5100 4600 5100 4550
+Wire Wire Line
+	5100 4600 5350 4600
+Connection ~ 5100 4600
+Text HLabel 5350 4600 2    50   Output ~ 0
+OUT2
+Text HLabel 4250 4600 0    50   Input ~ 0
+IN2
+Wire Wire Line
+	4450 4600 4250 4600
+Connection ~ 4450 4600
+$Comp
+L Device:Q_NMOS_GSD Q6
+U 1 1 5FA6B3A7
+P 4800 5300
+F 0 "Q6" V 5049 5300 50  0000 C CNN
+F 1 "Si2300" V 5140 5300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5000 5400 50  0001 C CNN
+F 3 "~" H 4800 5300 50  0001 C CNN
+	1    4800 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR089
+U 1 1 5FA6B3B3
+P 5100 5050
+F 0 "#PWR089" H 5100 4900 50  0001 C CNN
+F 1 "+12V" H 5115 5223 50  0000 C CNN
+F 2 "" H 5100 5050 50  0001 C CNN
+F 3 "" H 5100 5050 50  0001 C CNN
+	1    5100 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R38
+U 1 1 5FA6B3B9
+P 4450 5200
+F 0 "R38" H 4520 5246 50  0000 L CNN
+F 1 "10k" H 4520 5155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4380 5200 50  0001 C CNN
+F 3 "~" H 4450 5200 50  0001 C CNN
+	1    4450 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R42
+U 1 1 5FA6B3BF
+P 5100 5200
+F 0 "R42" H 5170 5246 50  0000 L CNN
+F 1 "10k" H 5170 5155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5030 5200 50  0001 C CNN
+F 3 "~" H 5100 5200 50  0001 C CNN
+	1    5100 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4950 4450 5000
+Wire Wire Line
+	4450 5000 4800 5000
+Wire Wire Line
+	4800 5000 4800 5100
+Connection ~ 4450 5000
+Wire Wire Line
+	4450 5000 4450 5050
+Wire Wire Line
+	4600 5400 4450 5400
+Wire Wire Line
+	4450 5400 4450 5350
+Wire Wire Line
+	5000 5400 5100 5400
+Wire Wire Line
+	5100 5400 5100 5350
+Wire Wire Line
+	5100 5400 5350 5400
+Connection ~ 5100 5400
+Text HLabel 5350 5400 2    50   Output ~ 0
+OUT3
+Text HLabel 4250 5400 0    50   Input ~ 0
+IN3
+Wire Wire Line
+	4450 5400 4250 5400
+Connection ~ 4450 5400
+$Comp
+L Device:Q_NMOS_GSD Q7
+U 1 1 5FA6CDCB
+P 4800 6050
+F 0 "Q7" V 5049 6050 50  0000 C CNN
+F 1 "Si2300" V 5140 6050 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5000 6150 50  0001 C CNN
+F 3 "~" H 4800 6050 50  0001 C CNN
+	1    4800 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR090
+U 1 1 5FA6CDD7
+P 5100 5800
+F 0 "#PWR090" H 5100 5650 50  0001 C CNN
+F 1 "+12V" H 5115 5973 50  0000 C CNN
+F 2 "" H 5100 5800 50  0001 C CNN
+F 3 "" H 5100 5800 50  0001 C CNN
+	1    5100 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R39
+U 1 1 5FA6CDDD
+P 4450 5950
+F 0 "R39" H 4520 5996 50  0000 L CNN
+F 1 "10k" H 4520 5905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4380 5950 50  0001 C CNN
+F 3 "~" H 4450 5950 50  0001 C CNN
+	1    4450 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R43
+U 1 1 5FA6CDE3
+P 5100 5950
+F 0 "R43" H 5170 5996 50  0000 L CNN
+F 1 "10k" H 5170 5905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5030 5950 50  0001 C CNN
+F 3 "~" H 5100 5950 50  0001 C CNN
+	1    5100 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5700 4450 5750
+Wire Wire Line
+	4450 5750 4800 5750
+Wire Wire Line
+	4800 5750 4800 5850
+Connection ~ 4450 5750
+Wire Wire Line
+	4450 5750 4450 5800
+Wire Wire Line
+	4600 6150 4450 6150
+Wire Wire Line
+	4450 6150 4450 6100
+Wire Wire Line
+	5000 6150 5100 6150
+Wire Wire Line
+	5100 6150 5100 6100
+Wire Wire Line
+	5100 6150 5350 6150
+Connection ~ 5100 6150
+Text HLabel 5350 6150 2    50   Output ~ 0
+OUT4
+Text HLabel 4250 6150 0    50   Input ~ 0
+IN4
+Wire Wire Line
+	4450 6150 4250 6150
+Connection ~ 4450 6150
+$Comp
+L power:+3V0 #PWR083
+U 1 1 5F919555
+P 4450 3250
+F 0 "#PWR083" H 4450 3100 50  0001 C CNN
+F 1 "+3V0" H 4465 3423 50  0000 C CNN
+F 2 "" H 4450 3250 50  0001 C CNN
+F 3 "" H 4450 3250 50  0001 C CNN
+	1    4450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V0 #PWR084
+U 1 1 5F919A29
+P 4450 4150
+F 0 "#PWR084" H 4450 4000 50  0001 C CNN
+F 1 "+3V0" H 4465 4323 50  0000 C CNN
+F 2 "" H 4450 4150 50  0001 C CNN
+F 3 "" H 4450 4150 50  0001 C CNN
+	1    4450 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V0 #PWR085
+U 1 1 5F919DA9
+P 4450 4950
+F 0 "#PWR085" H 4450 4800 50  0001 C CNN
+F 1 "+3V0" H 4465 5123 50  0000 C CNN
+F 2 "" H 4450 4950 50  0001 C CNN
+F 3 "" H 4450 4950 50  0001 C CNN
+	1    4450 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V0 #PWR086
+U 1 1 5F91A0BE
+P 4450 5700
+F 0 "#PWR086" H 4450 5550 50  0001 C CNN
+F 1 "+3V0" H 4465 5873 50  0000 C CNN
+F 2 "" H 4450 5700 50  0001 C CNN
+F 3 "" H 4450 5700 50  0001 C CNN
+	1    4450 5700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
