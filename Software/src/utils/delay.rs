@@ -1,8 +1,8 @@
-use embedded_hal::blocking::delay::{DelayMs, DelayUs};
+pub use embedded_hal::blocking::delay::{DelayMs, DelayUs};
 use stm32f4xx_hal::rcc::Clocks;
 
 pub struct Delay {
-    clocks: Clocks
+    clocks: Clocks,
 }
 
 impl Delay {

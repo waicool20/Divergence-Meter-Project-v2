@@ -1,11 +1,10 @@
 use core::ops::{AddAssign, SubAssign};
 
 use embedded_hal::digital::v2::OutputPin;
+use embedded_hal::prelude::*;
 use embedded_hal::PwmPin;
 use num::NumCast;
 use num_traits::Unsigned;
-
-use embedded_hal::prelude::*;
 
 use crate::drivers::shift_register::ShiftRegister;
 use crate::utils::delay::Delay;

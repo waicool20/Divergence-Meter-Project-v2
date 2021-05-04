@@ -1,4 +1,3 @@
-
 use cortex_m::asm::delay;
 use embedded_hal::blocking::i2c::{Read, Write, WriteRead};
 use num_traits::FromPrimitive;
@@ -110,7 +109,7 @@ pub enum ChargeFault {
 }
 
 pub struct Faults {
-    faults: u8
+    faults: u8,
 }
 
 impl Faults {
@@ -140,7 +139,7 @@ impl Faults {
 }
 
 pub struct BatteryCharger<I> {
-    i2c: I
+    i2c: I,
 }
 
 impl<I> BatteryCharger<I> where I: Read + Write + WriteRead {

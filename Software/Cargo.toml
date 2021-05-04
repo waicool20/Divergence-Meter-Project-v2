@@ -6,11 +6,12 @@ edition = "2018"
 
 [dependencies]
 embedded-hal = "0.2.4"
-cortex-m = "0.6.3"
+cortex-m = "0.7.2"
 cortex-m-rt = "0.6.13"
-cortex-m-rtic = "0.5.5"
+cortex-m-rtic = "0.6.0-alpha.2"
+dwt-systick-monotonic = "0.1.0-alpha.1"
 panic-halt = "0.2.0"
-usb-device = "0.2.7"
+usb-device = "0.2.8"
 usbd-serial = "0.1.1"
 
 [dependencies.void]
@@ -20,14 +21,14 @@ version = "1.0.2"
 [dependencies.shared-bus]
 default-features = false
 features = ["cortex-m"]
-version = "0.2.0"
+version = "0.2.2"
 
 [dependencies.stm32f4xx-hal]
 features = ["stm32f401", "rt"]
-version = "0.8.3"
+version = "0.9.0"
 
 [dependencies.num]
-version = "0.3"
+version = "0.4.0"
 default-features = false
 
 [dependencies.num-traits]

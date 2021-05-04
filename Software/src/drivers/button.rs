@@ -6,7 +6,7 @@ const LONG_PRESS_MIN: MilliSeconds = MilliSeconds(1200);
 
 #[derive(Clone, Copy)]
 pub struct Button {
-    pub duration: MilliSeconds
+    pub duration: MilliSeconds,
 }
 
 impl Button {

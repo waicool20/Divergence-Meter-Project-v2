@@ -116,7 +116,7 @@ pub enum Error {
 }
 
 pub struct ControlStatus {
-    data: u16
+    data: u16,
 }
 
 impl ControlStatus {
@@ -178,7 +178,7 @@ impl ControlStatus {
 }
 
 pub struct Flags {
-    data: u16
+    data: u16,
 }
 
 impl Flags {
@@ -251,7 +251,7 @@ pub enum GpoutInterruptFunction {
 }
 
 pub struct OperationConfiguration {
-    data: u16
+    data: u16,
 }
 
 impl OperationConfiguration {
@@ -349,7 +349,7 @@ impl OperationConfiguration {
 }
 
 pub struct ApplicationStatus {
-    data: u8
+    data: u8,
 }
 
 impl ApplicationStatus {
